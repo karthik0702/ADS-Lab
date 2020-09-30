@@ -125,7 +125,7 @@ int main()
     }
 
     printList(head);
-
+    cout << endl;
     cout << "\nHow many times do you want to delete from front? \n";
     cin >> beg;
 
