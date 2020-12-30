@@ -17,7 +17,9 @@ using namespace std;
         heap.pop();
       }
       sort(res.begin(), res.end());
+      cout<<"Ans: ";
       for (int i = 0; i < (int) res.size(); ++i) cout << res[i] << " ";
+      cout<<"\n";
     }
  }
 
@@ -25,9 +27,12 @@ int main() {
   int n;
   cin >> n;
   while (n--) {
-    cout << "\n";
     int k;
     cin >> k;
+    if(k < 0){
+    cout<<"Invalid array length"<<endl;
+    continue;
+    }
     vector<int> arr;
     for (int i = 0; i < k; ++i) {
       int ele;
